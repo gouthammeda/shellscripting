@@ -1,0 +1,6 @@
+
+// we are redirecting standard output stream to file output.txt
+ls 1>output.txt
+
+// we are redirecting standard error stream to file error.txt
+ls 2> error.txt

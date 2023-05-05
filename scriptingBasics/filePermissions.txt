@@ -1,0 +1,55 @@
+# displays permission of the file along with owners of the file.
+ls -l 
+ls -l first_script.sh
+#-rw-r--r--@ 1 gouthamkumarreddymeda  staff  234 Apr 12 14:57 first_script.sh
+
+
+#-rw-r--r--
+
+# first 3 are permissions for owner of file 
+# next 3 are for group owner of the file 
+# and next 3 are for others who want to access the file.
+
+# r-> read permission 
+# w-> write permission
+# x-> execute permission 
+
+
+# gives execute permission to all users in the script.
+# a -> grant permission to all users for the script, +x means give execute permission.
+chmod a+x first_script.sh
+
+# remove execute permission for all the users for a script.
+chmod a-x first_script.sh 
+
+# change permission for file owner to execute the file 
+chmod u+x first_script.sh
+# change permission for file owner to remove file execution 
+chmod u-x first_script.sh
+
+# change permission for group file owner to execute the file 
+chmod g+x first_script.sh
+
+# change permission for group file owner to remove execution of the file 
+chmod g-x first_script.sh
+
+# we are changing the file permission to provide execute to others.
+chmod o+x first_script.sh
+
+# we are changing the file permission to remove execute to others.
+chmod o-x first_script.sh
+
+r ...4
+w ...2
+x ...1
+maximum permission(r+w+x)->7.
+
+# remove execute permission for all the users.
+chmod 644 first_script.sh
+
+# add execute permissions for all users.
+chmod 755 first_script.sh
+
+
+
+

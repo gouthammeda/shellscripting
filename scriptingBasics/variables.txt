@@ -1,0 +1,26 @@
+we have 3 ways to assign a value to variable.
+
+Explicit definition: VAR=value 
+Read command: read VAR 
+Command substitution: VAR=$(pwd)
+
+VAR=value -> no spaces between '='.
+
+It is better to have variable names with capital letters.
+COUNT=5
+PATH=/var/lib
+DOGS_NUMBER = 8--> doesn't work as bash thinks we are passing arguments to dogs_number.
+
+MESSAGE=hello
+MESSAGE=hello buddy
+MESSAGE="hello buddy"--> if we want to store senetence then we have to enclose them with quotes.
+
+accessing variable 
+echo $COUNT
+echo $PATH 
+echo "path=$PATH"
+
+
+
+
+
