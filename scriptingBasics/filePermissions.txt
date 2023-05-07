@@ -16,6 +16,7 @@ ls -l first_script.sh
 
 
 # gives execute permission to all users in the script.
+
 # a -> grant permission to all users for the script, +x means give execute permission.
 chmod a+x first_script.sh
 
@@ -24,6 +25,7 @@ chmod a-x first_script.sh
 
 # change permission for file owner to execute the file 
 chmod u+x first_script.sh
+
 # change permission for file owner to remove file execution 
 chmod u-x first_script.sh
 
@@ -49,6 +51,7 @@ chmod 644 first_script.sh
 
 # add execute permissions for all users.
 chmod 755 first_script.sh
+
 
 
 

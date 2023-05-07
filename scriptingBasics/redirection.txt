@@ -4,3 +4,11 @@ ls 1>output.txt
 
 // we are redirecting standard error stream to file error.txt
 ls 2> error.txt
+
+// redirecting output to output.txt and error to error.txt
+ls % 1>output.txt 2>error.txt
+
+cat file1.txt | wc -l 
+cat file1.txt | head -3 
+cat file1.txt | head -3 | tail -2 
+cat file1.txt | head -3 | tail -2 | wc -l > howmany.txt
