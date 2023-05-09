@@ -1,0 +1,14 @@
+if [ -f hello.txt]; then echo exists; else echo does not exists; fi
+if [ -f hello.txt ]; then echo exists; else echo does not exists; fi
+if [ -f hellllo.txt ]; then echo exists; else echo does not exists; fi
+[-f hello.txt] && echo exists
+[ -f hello.txt ] && echo exists
+[ -f hello.txt ] || echo exists
+[ -f hello.txt ] || echo doesn't exists
+[ -f helllo.txt ] || echo doesnt exists
+[ -f hellllo.txt ] && echo exists || echo doesnt exists
+[ -f hellllo.txt ] && ping -c1 128.0.0.1  || echo doesnt exists
+[ -f hello.txt ] && ping -c1 128.0.0.1  || echo doesnt exists
+
+[ $? -eq 0 ] && echo command ok || echo something went wrong
+
